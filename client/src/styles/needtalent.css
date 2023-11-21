@@ -1,0 +1,81 @@
+/* needtalent.css */
+
+.need-talent-container .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 20%;
+    /* Adjust the width to control the number of checkboxes per row */
+}
+
+.need-talent-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.checkbox-container input[type="checkbox"]+label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Improving accessibility by providing visual feedback for label hover */
+.checkbox-container input[type="checkbox"]:hover+label {
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 10px 20px;
+    width: 105%;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
